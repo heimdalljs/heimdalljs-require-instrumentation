@@ -12,7 +12,12 @@ function build(entry, dest, format) {
     entry: entry,
 
     external: [
-      'fs', 'heimdalljs', 'chai'
+      'clear-require',
+      'chai',
+      'fs',
+      'heimdalljs',
+      'heimdalljs-graph',
+      'module',
     ],
     plugins: [
       babel({ exclude: 'node_modules/**' }),
@@ -31,3 +36,5 @@ function build(entry, dest, format) {
 
 build('src/index.js', 'dist/index.js', 'cjs');
 build('tests/index.js', 'dist/tests/index.js', 'cjs');
+build('tests/fixtures/silly-module.js', 'dist/tests/fixtures/silly-module.js', 'cjs');
+build('tests/fixtures/slow-module.js', 'dist/tests/fixtures/slow-module.js', 'cjs');
