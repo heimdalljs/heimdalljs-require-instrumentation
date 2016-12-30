@@ -1,5 +1,5 @@
 {
-  "name": "heimdalljs-require-instrumentation",
+  "name": "heimdalljs-require-monitor",
   "version": "0.1.0",
   "main": "dist/index.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "dist/",
     "!dist/tests/"
   ],
-  "repository": "git@github.com:heimdalljs/heimdalljs-require-instrumentation",
+  "repository": "git@github.com:heimdalljs/heimdalljs-require-monitor",
   "author": "Robert Jackson <me@rwjblue.com>",
   "license": "MIT",
   "devDependencies": {
